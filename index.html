@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Halpern & Co.</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" type="text/css" href="reset.css" />
+  <!-- <link rel="icon" href="favicon.png"> -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+  <style>
+    html , body {
+      background-color: black;
+      color: white;
+      font-family: "Merriweather";
+      font-optical-sizing: auto;
+      font-weight: 100;
+      font-style: normal;
+      font-size: 16px;
+    }
+    .wrap {
+      margin: 0px auto;
+      max-width: 800px;
+      padding: 7%;
+    }
+    h1 {
+      font-size: 3rem;
+      font-weight: 500;
+    }
+    footer {
+      margin: 20px auto;
+      font-size: .8rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Halpern &amp; Co.</h1>
+    </header>
+    <footer>Copyright &copy; <span id="year">2025</span>. All rights reserved.</footer>
+  </div>
+  <script>
+    document.getElementById('year').innerText = (new Date()).getFullYear();
+  </script>
+</body>
+</html>
