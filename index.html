@@ -25,7 +25,7 @@
     .wrap {
       margin: 0px auto;
       max-width: 800px;
-      padding: 7%;
+      padding: 15% 5%;
     }
     h1 , h2 , h3 , p , footer {
       margin: 1rem 0px;
@@ -45,12 +45,20 @@
       color: goldenrod;
       text-decoration: none;
     }
+    .mobile {
+      display: none;
+    }
+    @media (max-width: 600px)  {
+      .mobile {
+        display: unset;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="wrap">
     <header>
-      <h1>Halpern &amp; Co.</h1>
+      <h1>Halpern <br class="mobile"/>&amp; Co.</h1>
       <!-- <h3>We are a special situation advisory and investment firm.</h3> -->
       <h3>Early stage investment and advisory firm based in Toronto.</h3>
       <h3><a href="https://linkedin.com/in/rjhalpern" target="_blank">Linkedin.com/in/rjhalpern</a></h3>
